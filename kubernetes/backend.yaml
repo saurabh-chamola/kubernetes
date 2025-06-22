@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: saurabh0010/wanderlust-backend-beta:21
+          image: saurabh0010/wanderlust-backend-beta:22
           ports:
             - containerPort: 8080
 ---
