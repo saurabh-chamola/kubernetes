@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: backend
-  image: saurabh0010/backend-beta:24
+          image: saurabh0010/backend-beta:24
           ports:
             - containerPort: 8080
 ---
@@ -36,4 +36,3 @@ spec:
       targetPort: 5000
       protocol: TCP
       nodePort: 31100
-
