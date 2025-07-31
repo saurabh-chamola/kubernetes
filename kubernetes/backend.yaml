@@ -12,13 +12,12 @@ spec:
       app: backend
   template:
     metadata:
-      name: backend
       labels:
         app: backend
     spec:
       containers:
         - name: backend
-  image: saurabh0010/backend-beta:2
+          image: saurabh0010/backend-beta:2
           ports:
             - containerPort: 8080
           envFrom:
