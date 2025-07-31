@@ -17,12 +17,14 @@ spec:
     spec:
       containers:
         - name: backend
-  image: saurabh0010/backend-beta:6
+          image: saurabh0010/backend-beta:4
           ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
                 name: backend-configmap
+            - secretRef:
+                name: my-secret
 ---
 apiVersion: v1
 kind: Service
