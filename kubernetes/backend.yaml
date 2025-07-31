@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-  image: saurabh0010/backend-beta:5
+  image: saurabh0010/backend-beta:6
           ports:
             - containerPort: 8080
           envFrom:
