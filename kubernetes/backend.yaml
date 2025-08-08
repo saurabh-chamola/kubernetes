@@ -23,8 +23,6 @@ spec:
           envFrom:
             - configMapRef:
                 name: backend-configmap
-            - secretRef:
-                name: my-secret
 ---
 apiVersion: v1
 kind: Service
