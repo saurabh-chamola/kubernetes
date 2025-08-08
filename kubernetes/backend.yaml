@@ -19,7 +19,7 @@ spec:
         - name: backend
   image: saurabh0010/backend-beta:8
           ports:
-            - containerPort: 8080
+            - containerPort: 8005
           envFrom:
             - configMapRef:
                 name: backend-configmap
@@ -37,6 +37,6 @@ spec:
     app: backend
   ports:
     - port: 8080
-      targetPort: 5000
+      targetPort: 8005
       protocol: TCP
       nodePort: 31100
