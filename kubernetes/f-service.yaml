@@ -10,6 +10,6 @@ spec:
   ports:
     - port: 80              # Port other pods can use within the cluster
       targetPort: 5173      # Port your container listens on
-      nodePort: 31000       # Port exposed on each Node for external access (must be between 30000–32767)
+      nodePort: 31001     # Port exposed on each Node for external access (must be between 30000–32767)
       protocol: TCP
 
